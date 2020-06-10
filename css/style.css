@@ -1,0 +1,264 @@
+/* Document reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.mainhead {
+    font-size: 40px;
+    text-align: center;
+}
+
+.maintext {
+    font-size: 24px;
+}
+
+.secondaryhead {
+    font-size: 52px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 46px;
+    text-align: center;
+}
+
+/* --- SLIDESHOW STYLE SECTION ---- */
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+/* Changing size of images to fill entire page (looks bad i know) */
+.slideshow-container img {
+    height: 90vh;
+    width: 500vw;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* adding text to overlay on top of slideshow */
+.slide-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+
+/* --- NAVBAR STYLE SECTION ---- */
+/* Bottom navbar */
+nav {
+    background-color: #000000;
+    overflow: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+nav a.active {
+    color: #fd5886;
+}
+
+
+
+/* ---- ACTIVITY STYLE SECTION ---- */
+/* Activity grid */
+#activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.act-img {
+    width: 100%;
+    height: auto;
+}
+
+.act-text {
+    text-align: center;
+    padding: 5px 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 35%);
+
+}
+
+/* ---- QUESTION AND ANSWERS STYLE SECTION ---- */
+/* Questions n Answers expandable boxes */
+#qa {
+    background-color: #fd5886;
+}
+
+/* Changing size of header */
+#qa h3 {
+    background-color: #fff;
+}
+
+.qaHead {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 18px;
+    border: thin solid #000;
+    font-size: 17px;
+    text-align: center;
+    outline: thin solid #000;
+}
+
+.qaActive,
+.qaHead:hover {
+    background-color: #ddd;
+}
+
+/* Adding "plus" sign before open */
+.qaHead:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 17px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Adding "minus" sign after open */
+.qaActive:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.qaContent {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #fff;
+}
+
+.email {
+    color: #ff9d7d;
+}
+
+
+/* GALLERY GRID STYLE SECTION ---- */
+/* Making gallery grid */
+.gal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 115px);
+    grid-template-rows: repeat(3, 115px);
+    grid-gap: 15px;
+}
+
+.gal-grid img {
+    width: 100%;
+}
+
+/* Gallery modal controls */
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.modalMySlides {
+    display: none;
+}
+
+/* ---- EMAIL STYLE SECTION ---- */
+.email-btn {
+    background-color: #ff9d7d;
+    margin: 0 15%;
+    margin-top: 20px;
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 25px;
+    right: 50%;
+}
+
+#email-input {
+    background-color: #E2DFDD;
+    height: 5rem;
+    margin: 0 28px;
+    text-align: center;
+    font-size: 25px;
+}

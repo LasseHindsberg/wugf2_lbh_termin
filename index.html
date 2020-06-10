@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terminsprøve - Ladse Hindbær 2020</title>
+    <!-- Linking css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Linking google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Linking fontawesome icons -->
+    <script src="https://kit.fontawesome.com/87c28705a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Allowing navbar to scroll to top -->
+    <header id="home">
+        <h1>Musicon skate 2020</h1>
+    </header>
+    <main>
+        <!-- "Front Page" with slideshow and hero text -->
+        <section>
+            <!-- Slideshow container -->
+            <div class='slideshow-container'>
+
+                <!-- Full-width images with number and caption text -->
+                <div class='mySlides fade'>
+                    <img src='./img/billeder/slider1.jpg' alt='' style='width:100%'>
+                </div>
+
+                <div class='mySlides fade'>
+                    <img src='./img/billeder/slider2.jpg' alt='' style='width:100%'>
+                </div>
+
+                <div class='mySlides fade'>
+                    <img src='./img/billeder/slider3.jpg' alt='' style='width:100%'>
+                </div>
+                <div class="slide-text">
+                    <h2 class="mainhead">Fortiden har indhentet os</h2>
+                    <p class="maintext">Det er tid til at finde boards, sneakers, de gamle glasflasker med ½ liter cola.
+                        Og sig Jolly til
+                        den
+                        med de modne frugter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start of Activity Section - Grids -->
+        <section id="activity">
+            <h2 style="display: none;">w3 validator vil gerne have mig :)</h2>
+            <img src="img/billeder/a1.jpg" alt="" class="act-img">
+            <p class="act-text"><strong>Du har hentet boardet og er klar.</strong> <br> Kig ud i vores nye butikker
+            </p>
+            <img src="img/billeder/a4.jpg" alt="" class="act-img">
+            <p class="act-text"><strong>Kom ud i hal 7.</strong><br>Vi har fået nye ramper</p>
+            <img src="img/billeder/a2.jpg" alt="" class="act-img">
+            <p class="act-text"><strong>Der sker en masse på Musicon.</strong><br>Check kalenderen.</p>
+            <img src="img/billeder/a3.jpg" alt="" class="act-img">
+            <p class="act-text"><strong>Rabalder er tilbage.</strong><br>Det er igen blevet tid til musik og kultur
+                på Musicon.</p>
+        </section>
+
+        <!-- Start of QnA section - Collabsible boxes -->
+        <section id="qa">
+            <!-- Allowing navbar to scroll to here -->
+            <img src="img/billeder/qa.png" alt="" style="width: 100%;">
+            <h3 class="secondaryhead">Spørgsmål du har?</h3>
+            <button class="qaHead">Hvordan kommer jeg til Musicon?</button>
+            <div class="qaContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, assumenda reiciendis aspernatur,
+                    libero laborum fuga ad voluptatum ducimus harum totam ipsum blanditiis quisquam accusamus aliquam a
+                    labore ab nisi, ipsam cumque officiis quae fugit reprehenderit sit inventore. Accusamus, in
+                    voluptatem tempore recusandae nostrum illum officiis labore, tempora doloribus soluta quo?</p>
+            </div>
+            <button class="qaHead">Kan jeg låne boards?</button>
+            <div class="qaContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga consequatur veniam nesciunt
+                    vitae quis aperiam eaque libero, iste tenetur debitis doloribus ad officia adipisci amet similique
+                    corrupti nobis natus dolore, illo necessitatibus aut expedita voluptatibus quisquam. Assumenda esse
+                    incidunt nesciunt ratione necessitatibus sunt, omnis nihil sed, consectetur molestias est.</p>
+            </div>
+            <button class="qaHead">Er der noget mad?</button>
+            <div class="qaContent">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolorem explicabo placeat
+                    doloribus quas atque consectetur laudantium quos voluptatibus hic fugit saepe adipisci ipsum in
+                    ab cum consequuntur, dolore officiis magni, iste eos laborum? A corporis placeat voluptate
+                    veniam, repudiandae molestias? Quas excepturi consequuntur repellendus ipsa maiores culpa,
+                    sapiente a?</p>
+            </div>
+            <button class="qaHead">Kan jeg sponsore Musicon Skate?</button>
+            <div class="qaContent">
+                <p>Selvfølgelig. Det er muligt at sponsorere alle elementer under Musicon Skate. Hvis du ønsker at
+                    sponsere eller oprette en bod under Musicon Skate - så kontakt:</p>
+                <p class="email">grejfyr@musiconskate.dk</p>
+            </div>
+        </section>
+
+        <!-- Start of Gallery section - Grid 2: Electric Boogaloo -->
+        <section id="gallery">
+            <h2 class="secondaryhead">Sidste år var fedt</h2>
+            <div class="gal-grid">
+                <img src="img/billeder/grid/2.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/1.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/3.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/4.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/5.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/6.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/7.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/8.jpg" onclick="openModal()" alt="">
+                <img src="img/billeder/grid/9.jpg" onclick="openModal()" alt="">
+            </div>
+
+            <!-- The modal itself -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/1.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/2.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/3.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/4.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/5.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/6.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/7.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/8.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="modalMySlides">
+                        <img src="img/billeder/grid/9.jpg" style="width: 100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start of Email section -->
+        <section id="email">
+            <h3 class="secondaryhead">Mere Info!?</h3>
+            <p class="maintext">Så hit med din mail adresse - så laver vi en liste og spammer jer det næste års tid med
+                updates</p>
+            <input type="email" name="email" id="email-input" placeholder="Din email:">
+            <br>
+            <button type="submit" class="email-btn">YES PLZ</button>
+
+        </section>
+        <br><br><br><br><br><br><br>
+    </main>
+
+    <!-- Nav bar sticky to bottom -->
+    <footer>
+        <nav>
+            <a class="active" href="#home"><i class="fas fa-home"></i></a>
+            <a href="#activity"><i class="fas fa-compass"></i></a>
+            <a href="#qa"><i class="fas fa-list-ul"></i></a>
+            <a href="#gallery"><i class="fas fa-images"></i></a>
+            <a href="#email"><i class="fas fa-thumbs-up"></i></a>
+        </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
