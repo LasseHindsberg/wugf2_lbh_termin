@@ -6,11 +6,13 @@
     scroll-behavior: smooth;
 }
 
+/* --- GENERAL DOCUMENT STYLE SECTION --- */
+/* Setting the font family of entire document */
 html {
     font-family: 'Oswald', sans-serif;
 
 }
-
+/* Assigning styling to each section header i'll be using */
 .mainhead {
     font-size: 40px;
     text-align: center;
@@ -24,11 +26,13 @@ html {
     font-size: 52px;
     text-align: center;
 }
-
+/* Giving the top header a different styling than ".mainhead" */
 #home h1 {
     font-size: 46px;
     text-align: center;
 }
+/* --- END OF GENERAL DOCUMENT STYLING --- */
+
 
 /* --- SLIDESHOW STYLE SECTION ---- */
 /* Slideshow container */
@@ -78,7 +82,7 @@ html {
     padding: 5px;
     color: white;
 }
-
+/* --- END OF SLIDESHOW STYLING --- */
 
 /* --- NAVBAR STYLE SECTION ---- */
 /* Bottom navbar */
@@ -89,7 +93,7 @@ nav {
     bottom: 0;
     width: 100%;
 }
-
+/* Styling each icon */
 nav a {
     float: left;
     text-align: center;
@@ -98,11 +102,11 @@ nav a {
     font-size: 50px;
     color: #ffffff;
 }
-
+/* Making active link a different color (example) */
 nav a.active {
     color: #fd5886;
 }
-
+/* --- END OF NAV BAR STYLING --- */
 
 
 /* ---- ACTIVITY STYLE SECTION ---- */
@@ -112,20 +116,20 @@ nav a.active {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
-
+/* styling the width of the images to fit their entire grid section */
 .act-img {
     width: 100%;
     height: auto;
 }
-
+/* Styling text to be centered in their grid, could maybe be done easier */
 .act-text {
     text-align: center;
     padding: 5px 5px;
     top: 50%;
     left: 50%;
     transform: translate(0%, 35%);
-
 }
+/*  --- END OF ACTIVITY STYLING --- */
 
 /* ---- QUESTION AND ANSWERS STYLE SECTION ---- */
 /* Questions n Answers expandable boxes */
@@ -133,11 +137,11 @@ nav a.active {
     background-color: #fd5886;
 }
 
-/* Changing size of header */
+/* Changing background of header */
 #qa h3 {
     background-color: #fff;
 }
-
+/* Styling the clickable boxes */
 .qaHead {
     margin: 0 auto;
     width: 100%;
@@ -148,7 +152,7 @@ nav a.active {
     text-align: center;
     outline: thin solid #000;
 }
-
+/* Styling the active box */
 .qaActive,
 .qaHead:hover {
     background-color: #ddd;
@@ -169,7 +173,7 @@ nav a.active {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
-
+/* Styling inside content  */
 .qaContent {
     margin: 0 auto;
     width: 80%;
@@ -179,10 +183,11 @@ nav a.active {
     transition: max-height 0.5s ease-out;
     background-color: #fff;
 }
-
+/* Styling the email in 4th box to be a different color than text */
 .email {
     color: #ff9d7d;
 }
+/* --- END OF QnA STYLING --- */
 
 
 /* GALLERY GRID STYLE SECTION ---- */
@@ -193,7 +198,7 @@ nav a.active {
     grid-template-rows: repeat(3, 115px);
     grid-gap: 15px;
 }
-
+/* Styling the images to fill their entire grid section*/
 .gal-grid img {
     width: 100%;
 }
@@ -231,19 +236,24 @@ nav a.active {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 /* Hide the slides by default */
 .modalMySlides {
     display: none;
 }
 
+/* --- END OF GALLERY STYLING --- */
+
+
 /* ---- EMAIL STYLE SECTION ---- */
+/* Styling the input field */
+#email-input {
+    background-color: #E2DFDD;
+    height: 5rem;
+    margin: 0 28px;
+    text-align: center;
+    font-size: 25px;
+}
+/* Styling the email submit button */
 .email-btn {
     background-color: #ff9d7d;
     margin: 0 15%;
@@ -254,11 +264,34 @@ nav a.active {
     border-radius: 25px;
     right: 50%;
 }
+/* --- END OF EMAIL STYLING --- */
 
-#email-input {
-    background-color: #E2DFDD;
-    height: 5rem;
-    margin: 0 28px;
-    text-align: center;
-    font-size: 25px;
-}
+
+/* Color scheme */
+/* None of these classes were used */
+.color1 {
+    color: #000000;
+} 
+/* used for:
+    Text
+    Modal background (with alpha)
+    Navbar Background
+ */
+ .color2 {
+     color: #936060;
+    }
+    /* Didnt use */
+    .color3 {
+        color: #fd5886;
+    }
+    /* Used for:
+        Active tag for navbar
+        background color for QnA section
+    */
+    .color4 {
+        color: #ff9d7d;
+    }
+    /* Used for:
+        Submit button 
+        Email tag in QnA
+    */
