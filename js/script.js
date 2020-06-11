@@ -1,23 +1,23 @@
 
 // Ended up opting for a different method, using just css
 
-// // Slideshow function
-// var slideIndex = 0;
-// showSlides();
+// Slideshow function
+var slideIndex = 0;
+showSlides();
 
-// function showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName('mySlides');
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = 'none';
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {
-//         slideIndex = 1
-//     }
-//     slides[slideIndex - 1].style.display = 'block';
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds. Shown in MS can be changed.
-// }
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 2000); // Change image every 2 seconds. Shown in MS can be changed.
+}
 
 // QnA Function
 var coll = document.getElementsByClassName("qaHead");
